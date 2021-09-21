@@ -1,0 +1,13 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: cluster-configuration
+  namespace: acm-cluster-configuration
+  annotations:
+    apps.open-cluster-management.io/reconcile-rate: high
+spec:
+  pathname: https://GITEA_URL/lab-user/cluster-configuration
+  type: Git
+  secretRef:
+    name: gitea-cluster-configuration

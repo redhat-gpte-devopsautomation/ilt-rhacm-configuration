@@ -1,0 +1,2 @@
+This folder holds applications to be deployed on the Hub cluster.
+

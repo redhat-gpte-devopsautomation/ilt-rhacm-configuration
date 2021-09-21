@@ -1,0 +1,6 @@
+This folder holds the root configuration for the cluster.
+
+This includes:
+- common policies
+- Hub specific applications
+- And all applications to be deployed to managed clusters

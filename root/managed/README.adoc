@@ -1,0 +1,6 @@
+This folder holds managed applications to be deployed to managed clusters.
+
+- production folder holds common applications to be deployed to all managed clusters
+- cluster-name folders hold applications only to be deployed to specific clusters
+
+

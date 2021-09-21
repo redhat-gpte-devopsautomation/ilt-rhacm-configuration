@@ -1,0 +1,8 @@
+This folder holds applications that need per-cluster configuration.
+
+Structure should be like this:
+- application-name
+  - base
+  - overlays
+    - cluster name 1
+    - cluster name 2
