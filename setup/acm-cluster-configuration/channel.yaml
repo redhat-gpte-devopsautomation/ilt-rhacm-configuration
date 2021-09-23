@@ -7,7 +7,7 @@ metadata:
   annotations:
     apps.open-cluster-management.io/reconcile-rate: high
 spec:
-  pathname: https://GITEA_URL/lab-user/cluster-configuration
+  pathname: URL_PLACEHOLDER/USER_PLACEHOLDER/cluster-configuration
   type: Git
   secretRef:
     name: gitea-cluster-configuration
