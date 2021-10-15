@@ -5,3 +5,6 @@ subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: User
   name: system:admin
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: admin
