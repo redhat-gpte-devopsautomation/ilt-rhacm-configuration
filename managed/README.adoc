@@ -1,3 +1,18 @@
-This folder holds common applications and for managed clusters. For cluster specific applications use the cluster-specific folder.
+This folder holds common applications and for managed clusters.
+For cluster specific applications use the cluster-specific folder.
 
 All applications should be in their own subdirectory with a `kustomization.yaml` file to list all components.
+
+.
+├── application-name-1
+│   ├── base
+│   └── overlays
+│       ├── development
+│       ├── production
+│       └── ...
+├── application-name-2
+    ├── base
+    └── overlays
+        ├── development
+        ├── production
+        └── ...

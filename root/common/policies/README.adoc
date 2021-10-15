@@ -1,0 +1,3 @@
+This folder holds common policies to be deployed. Policies always
+go onto the Hub cluster - and use Placement Bindings to select which
+cluster they apply to.

@@ -1,6 +1,5 @@
-This folder holds managed applications to be deployed to managed clusters.
+This folder holds managed application subscriptions to be deployed to managed clusters.
 
-- production folder holds common applications to be deployed to all managed clusters
-- cluster-name folders hold applications only to be deployed to specific clusters
-
-
+- development folder holds common applications to be deployed to all managed development clusters
+- production folder holds common applications to be deployed to all managed production clusters
+- <cluster-name> folders hold applications only to be deployed to specific clusters

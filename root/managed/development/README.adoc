@@ -1,5 +1,5 @@
 This folder holds application subscriptions to be deployed to all managed clusters
-with the tag `purpose: production`.
+with the tag `purpose: development`.
 
 Individual application subscriptions are created by creating a folder,
 adding a subscription, placementrule and application object to that folder.

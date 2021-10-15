@@ -1,8 +1,17 @@
 This folder holds applications that need per-cluster configuration.
 
-Structure should be like this:
-- application-name
-  - base
-  - overlays
-    - cluster name 1
-    - cluster name 2
+Directory structure should be like this:
+
+.
+├── application-name-1
+│   ├── base
+│   └── overlays
+│       ├── cluster-name-1
+│       ├── cluster-name-2
+│       └── ...
+├── application-name-2
+    ├── base
+    └── overlays
+        ├── cluster-name-1
+        ├── cluster-name-2
+        └── ...
