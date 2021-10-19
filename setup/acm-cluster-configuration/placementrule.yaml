@@ -4,9 +4,6 @@ kind: PlacementRule
 metadata:
   name: cluster-configuration-placement
   namespace: acm-cluster-configuration
-  annotations: {}
-  labels:
-    app: cluster-configuration
 spec:
   clusterSelector:
     matchLabels:
