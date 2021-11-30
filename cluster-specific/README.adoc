@@ -1,17 +1,26 @@
 This folder holds applications that need per-cluster configuration.
 
+Hub specific applications go into a special folder, *hub*, to make it obvious that they
+only get deployed to the hub cluster.
+
+Cluster specific (and that means ONLY deploying to a particular cluster, not a set of clusters with a
+common label) go into the application-name-x directories with kustomizations per cluster.
+
 Directory structure should be like this:
 
 .
+├── hub
+│   ├── hub-application-name-1
+│   └── ...
 ├── application-name-1
-│   ├── base
-│   └── overlays
-│       ├── cluster-name-1
-│       ├── cluster-name-2
-│       └── ...
-├── application-name-2
-    ├── base
-    └── overlays
-        ├── cluster-name-1
-        ├── cluster-name-2
-        └── ...
+│   ├── base
+│   └── overlays
+│       ├── cluster-name-1
+│       ├── cluster-name-2
+│       └── ...
+└── application-name-2
+    ├── base
+    └── overlays
+        ├── cluster-name-1
+        ├── cluster-name-2
+        └── ...

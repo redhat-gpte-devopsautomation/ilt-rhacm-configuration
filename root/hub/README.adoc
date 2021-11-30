@@ -1,1 +1,3 @@
-This folder holds application subscriptions to be deployed on the Hub cluster.
+This folder holds application subscriptions to be deployed on the hub cluster.
+
+Each application subscription should go into its own directory.

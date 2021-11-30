@@ -1,0 +1,7 @@
+This folder holds applications that are specific to the hub cluster.
+
+Directory structure should be like this:
+
+.
+├── hub-application-1
+└── ...

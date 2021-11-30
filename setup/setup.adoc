@@ -2,11 +2,11 @@
 
 == Prerequisites
 
-* An OpenShift 4.8 cluster that's already deployed. No customization is necessary on that cluster.
+* An OpenShift 4.9 cluster that's already deployed. No customization is necessary on that cluster.
 * `system:admin` or `kube:admin` access to the cluster. Already authenticated. Check with `oc whoami`.
 * A local clone of this repository to `$HOME/cluster-configuration`.
 
-== Set up Red Hat Advanced Cluster Manager
+== Set up Red Hat Advanced Cluster Management for Kubernetes
 
 * Deploy RHACM.
 ** Create the `open-cluster-management` namespace:
@@ -37,7 +37,8 @@ watch oc get pod -n open-cluster-management
 oc create -f $HOME/cluster-configuration/setup/rhacm/multiclusterhub.yaml
 ----
 
-** Wait until RHACM MultiClusterHub is fully deployed.
+** Wait until RHACM MultiClusterHub is fully deployed (54 pods running in the namespace).
+
 
 == Set up the ACM Root Configuration
 
@@ -48,10 +49,10 @@ oc create -f $HOME/cluster-configuration/setup/rhacm/multiclusterhub.yaml
 oc patch clusterrolebinding open-cluster-management:subscription-admin --patch-file $HOME/cluster-configuration/setup/rhacm/crb-patch.yaml
 ----
 
-* Apply the seed configuration:
+* Apply the root configuration:
 +
 [source,sh]
 ----
-oc apply -k .$HOME/cluster-configuration/setup/acm-cluster-configuration
+oc apply -k $HOME/cluster-configuration/setup/acm-cluster-configuration
 ----
 

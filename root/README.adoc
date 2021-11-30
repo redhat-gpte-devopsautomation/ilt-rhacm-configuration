@@ -1,35 +1,36 @@
-This folder holds the root configuration for the cluster.
+This folder holds the root configuration for the cluster. Everything in this folder goes on the hub cluster.
 
 This includes:
 - common policies
 - Hub specific subscriptions
 - Subscriptions to be deployed to managed clusters
 
+Deploying this folder as an application to the hub cluster will cascade all other settings.
+
 Directory Structure:
 
 .
-├── common
-│   ├── policies
-│   │   ├── policy-1
-│   │   ├── policy-2
-│   │   └── ...
-│   └── secrets-channel
 ├── hub
-│   ├── hub-subscription-1
-│   └── hub-subscription-1
+│   ├── policies
+│   │   ├── policy-1
+│   │   ├── policy-2
+│   │   └── ...
+│   ├── hub-subscription-1
+│   ├── hub-subscription-2
+│   └── ...
 └── managed
     ├── development
-    │   ├── development-subscription-1
-    │   ├── development-subscription-2
-    │   └── ...
+    │   ├── development-subscription-1
+    │   ├── development-subscription-2
+    │   └── ...
     ├── production
-    │   ├── production-subscription-1
-    │   ├── production-subscription-2
-    │   └── ...
+    │   ├── production-subscription-1
+    │   ├── production-subscription-2
+    │   └── ...
     ├── <cluster-name-1>
-    │   ├── <cluster-name-1>-subscription-1
-    │   ├── <cluster-name-1>-subscription-2
-    │   └── ...
+    │   ├── <cluster-name-1>-subscription-1
+    │   ├── <cluster-name-1>-subscription-2
+    │   └── ...
     └── <cluster-name-2>
         ├── <cluster-name-2>-subscription-1
         ├── <cluster-name-2>-subscription-2
