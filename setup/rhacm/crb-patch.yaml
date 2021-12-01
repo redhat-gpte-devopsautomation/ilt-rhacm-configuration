@@ -5,6 +5,3 @@ subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: User
   name: admin
-- apiGroup: rbac.authorization.k8s.io
-  kind: User
-  name: admin1
