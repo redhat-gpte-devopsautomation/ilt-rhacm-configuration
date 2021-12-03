@@ -4,7 +4,7 @@ kind: Kustomization
 
 resources:
 - namespace-acm-cluster-configuration.yaml
-- namespace-acm-policy.yaml
+- namespace-acm-policies.yaml
 - namespace-acm-secrets.yaml
 - namespace-acm-subscriptions.yaml
 - secret-gitea.yaml
