@@ -2,17 +2,17 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: cluster-configuration-subscription
+  name: ac-cluster-configuration
   namespace: acm-cluster-configuration
   annotations:
     apps.open-cluster-management.io/git-branch: master
     apps.open-cluster-management.io/git-path: root
     apps.open-cluster-management.io/reconcile-option: merge
   labels:
-    app: cluster-configuration
+    app: acm-cluster-configuration
 spec:
-  channel: acm-cluster-configuration/cluster-configuration
+  channel: acm-cluster-configuration/acm-cluster-configuration
   placement:
     placementRef:
-      name: cluster-configuration-placement
       kind: PlacementRule
+      name: acm-cluster-configuration
