@@ -1,5 +1,0 @@
-This folder holds application subscriptions and policies to be deployed on the hub cluster.
-
-Policies go into the policies folder.
-
-Each hub application subscription should go into its own directory.

@@ -1,0 +1,19 @@
+This folder holds application subscriptions to be deployed to managed clusters.
+
+Each directory represents one application subscription.
+
+The directory structure should be like this:
+
+.
+├── application-subscription-1
+├── application-subscription-2
+│   ├── development
+│   └── production
+├── application-subscription-3
+│   ├── <cluster-name-1>
+│   ├── <cluster-name-2>
+│   └── ...
+└── application-subscription-4
+    ├── <cluster-name-1>
+    ├── <cluster-name-2>
+    └── ...
