@@ -1,5 +1,21 @@
-This folder holds managed application subscriptions to be deployed to managed clusters.
+This folder holds application subscriptions to be deployed to managed clusters.
 
-- development folder holds common application subscriptions to be deployed to all managed development clusters
-- production folder holds common application subscriptions to be deployed to all managed production clusters
-- <cluster-name> folders hold application subscriptions only to be deployed to specific clusters
+Each directory represents one application subscription.
+The overlays represent each group of clusters (e.g. development or production) or individual clusters
+to be deployed to.
+
+The directory structure should be like this:
+
+.
+├── application-name-1
+│   ├── base
+│   └── overlays
+│       ├── development
+│       ├── production
+│       └── ...
+└── application-name-2
+    ├── base
+    └── overlays
+        ├── cluster-name-1
+        ├── cluster-name-2
+        └── ...

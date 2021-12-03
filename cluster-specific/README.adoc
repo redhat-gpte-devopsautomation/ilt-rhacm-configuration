@@ -10,13 +10,13 @@ The directory structure should be like this:
 .
 ├── application-name-1
 │   └── hub
-├── application-name-1
+├── application-name-2
 │   ├── base
 │   └── overlays
 │       ├── cluster-name-1
 │       ├── cluster-name-2
 │       └── ...
-└── application-name-2
+└── application-name-3
     ├── base
     └── overlays
         ├── cluster-name-1
