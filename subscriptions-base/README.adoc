@@ -1,0 +1,8 @@
+This folder holds any base resources that need to be customized to be deployed. Typically this includes cluster specific customizations.
+
+Application subscriptions in the rhacm-root/subscriptions directory may reference this application bases.
+.
+└── base-subscriptions
+    ├── application-subscription-base-1
+    └── application-subscription-base-2
+    └── ...

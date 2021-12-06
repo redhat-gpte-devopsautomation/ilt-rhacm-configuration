@@ -1,0 +1,11 @@
+= OpenShift Post Installation with Red Hat Advanced Cluster Management for Kubernetes
+
+== ILT Repository
+
+This repository contains the starting point of the RHACM configuration repository for the
+OpenShift Post Installation with Red Hat Advanced Cluster Management for Kubernetes ILT.
+
+Only RHACM resources should be in this repository.
+
+Application resources should go into the corresponding repository:
+https://github.com/redhat-gpte-devopsautomation/ilt-applications.git
