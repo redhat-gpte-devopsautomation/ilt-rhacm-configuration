@@ -1,0 +1,13 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: acm-configuration
+  namespace: acm-configuration
+  annotations:
+    apps.open-cluster-management.io/reconcile-rate: high
+spec:
+  pathname: https://HOST_PLACEHOLDER/USER_PLACEHOLDER/ilt-rhacm-configuration
+  type: Git
+  secretRef:
+    name: ilt-gitea

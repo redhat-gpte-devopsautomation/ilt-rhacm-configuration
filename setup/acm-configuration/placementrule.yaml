@@ -2,8 +2,8 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: acm-cluster-configuration
-  namespace: acm-cluster-configuration
+  name: acm-configuration
+  namespace: acm-configuration
 spec:
   clusterSelector:
     matchLabels:

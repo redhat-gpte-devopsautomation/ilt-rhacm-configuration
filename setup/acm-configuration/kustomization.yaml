@@ -3,12 +3,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- namespace-acm-cluster-configuration.yaml
+- namespace-acm-configuration.yaml
 - namespace-acm-policies.yaml
 - namespace-acm-secrets.yaml
 - namespace-acm-subscriptions.yaml
-- secret-gitea.yaml
-- channel.yaml
+- secret-ilt-gitea.yaml
+- channel-applications.yaml
+- channel-configuration.yaml
 - placementrule.yaml
 - subscription.yaml
 - application.yaml
